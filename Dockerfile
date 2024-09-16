@@ -17,5 +17,7 @@ RUN apt-get update && apt-get install -y \
 RUN git clone --recursive https://github.com/tauzn-clock/mast3r /mast3r
 WORKDIR /mast3r
 RUN pip3 install -r requirements.txt
+RUN pip3 install -r dust3r/requirements.txt
+RUN pip3 install -r dust3r/requirements_optional.txt
 RUN pip install opencv-python==4.8.0.74
 RUN pip install open3d==0.18.0
